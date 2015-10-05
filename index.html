@@ -7,14 +7,18 @@
  <body>
     <section id="mainView">
         <header id="mainView_header">
-            menu <h1>Berlin</h1>
-            navigation
+            <button type="button" onclick="..." id="minus">menuicon</button> 
+            <h1>Berlin</h1>
+            <button type="button" onclick="..." id="minus">navgationIcon</button>
         </header>
+        <br>
         <div id="mainView_datepicker">
-            minus <h1>05.10.2015</h1> plus
+            <button type="button" onclick="..." id="minus">minusIcon</button>
+            <h1>05.10.2015</h1> 
+            <button type="button" onclick="..." id="minus">plusIcon</button>
         </div>
         <div id="mainView_content">
-            <img src="Picture/clear-day.png">
+            <img src="Picture/clear-day.png" alt="clear day">
             <p>Mostly cloudy throughout the day</p>
             <h1>22°C</h1>
             <div>
@@ -28,14 +32,30 @@
     </section>
     <nav id="sidebar">
         <h1>Cities</h1>
+        <div>
+            <fieldset>
+                <label for="addCity"></label>
+                <input type="text" id="addCity" placeholder="New City">
+                <button type="submit" id="button_addCity"> ... </button>
+            </fieldset>
+            
+        </div>
         <ol>
             <li>Berlin</li>
             <li>Paris</li>
         </ol>
+        <button type="button" onclick="..." id="minus">addIcon</button>
+        <a href="details.html">DETAILS</a>
         <h1>Settings</h1>
         <ol>
-            <li>Temp</li>
-            <li>Wind</li>
+            <li>Temp 
+                <button type="button" onclick="..." id="buttonC">C</button>
+                <button type="button" onclick="..." id="buttonF">F</button>
+            </li>             
+            <li>Wind
+                <button type="button" onclick="..." id="buttonKmH">km/h</button>
+                <button type="button" onclick="..." id="buttonMH">m/h</button>
+            </li>
         </ol>
      </nav>
  </body>

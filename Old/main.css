@@ -1,0 +1,210 @@
+html {}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {}
+
+#detailView_header,
+#mainView_header,
+#mainView_datepicker {
+    height: 40px;
+    background-color: darkgray;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 6px;
+    margin: 0px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    font-size: 44pt;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+#sidebar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+    display: none;
+    background-color:rgba(0, 0, 0, 0.3);;
+}
+
+#menuicon {
+    float: left;
+}
+
+#navgationIcon {
+    float: right;
+}
+
+div#mainView_datapicker {
+    position: fixed;
+}
+
+#mainView_datepicker {
+    background-color: aqua;
+}
+
+#minusIcon {
+    float: left;
+}
+
+#plusIcon {
+    float: right;
+}
+
+#mainView_content {
+    height: 500px;
+    text-align: center;
+}
+
+#imgWeather {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#mainView_content {
+    background-color: aquamarine;
+}
+
+#mainView_footer {
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.contentOpten {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+
+#imgWorld {
+    float: left;
+}
+
+#navCity h1 {
+    text-align: left;
+}
+
+#detailView {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+}
+
+#mainView {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#detailView_content {
+    height: 560px;
+    overflow: auto;
+    text-align: center;
+}
+
+.row {
+    height: 150px;
+}
+
+.time,
+.icon,
+.windSpeed,
+.humidity {
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+}
+
+.row:nth-child(even) {
+    background-color: aqua;
+}
+
+.row:nth-child(odd) {
+    background-color: mediumaquamarine;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.button {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 5px;
+    margin: 5px;
+    border: 0px;
+    color: white;   
+
+}
+
+#buttonLocal {
+    float: right;
+}
+
+#buttoMenu {
+    float: left;
+}
+#buttonDetail {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    border: 0px;
+}
+
+.buttonX {
+    float: right;
+}
+
+#background {
+    idth: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+    background-color: gray;
+}
+
+#nav {
+        width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+        background-color:gray;
+    
+
+}

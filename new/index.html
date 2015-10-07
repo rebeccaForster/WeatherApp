@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Weather App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include Bootstrap css, jQuery js and Bootstrap js from CDN -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- mainView -->
+        <div data-role="page" id="mainView">
+
+            <div data-role="header" class="header">
+                <a href="#mypanel"><i class="fa fa-bars" id="buttonMenu"></i></a>
+                <button type="button" class="buttonHeader" id="buttonLocal"><i class="fa fa-location-arrow"></i></button>
+                <i class="fa fa-location-arrow"></i>
+                <h1>München</h1>
+            </div>
+            <div class="ui-content" role="main" id="detailContent">
+            </div>
+            <div data-role="footer">
+                <a href="#detailView" id="buttonDetails">DETAILS</a>
+            </div>
+            <!-- main panel -->
+            <div data-role="panel" id="mypanel" data-display="overlay">
+                tesPanelt
+                 <a href="#mainView" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left"></a>
+            </div>
+        </div>
+
+        <!-- detailView -->
+        <div data-role="page" id="detailView">
+
+            <div data-role="header" class="header">
+                <a href="#mainView"><i class="fa fa-times buttonX"></i></a>
+                 <h1>München</h1>
+            </div>
+            <div class="ui-content" role="main">
+                <div class="container-fluet">
+                    <div class="row">
+                        <div class="col-md-2">12:00</div>
+                        <div class="col-md-4"><img  src="img/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-md-2">17°C</div>
+                        <div class="col-md-2">6km/h</div>
+                        <div class="col-md-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img  src="img/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img  src="img/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img  src="img/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img  src="img/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img  src="img/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img  src="img/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img  src="img/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                        
+                </div>
+            </div>
+            <div data-role="footer">
+            </div>
+        </div>
+    </div>
+    <!-- page -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

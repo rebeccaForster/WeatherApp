@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <section id="mainView">
+            <header id="mainView_header">
+                <button id="buttoMenu" onclick="startSidbar()" class="button"><i class="fa fa-bars"></i></button>
+                <button type="button" id="buttonLocal" class="button"><i class="fa fa-location-arrow"></i></button>
+                <h1 class="City">Berlin</h1>
+            </header>
+            <div id="mainView_datepicker">
+                <button type="button" onclick="changeDay(false)" class="button" id="minusIcon"><i class="fa fa-angle-left"></i>
+                </button>
+                <button type="button" onclick="changeDay(true)" class="button" id="plusIcon"><i class="fa fa-angle-right"></i>
+                </button>
+
+                <h1>05.10.2015</h1>
+            </div>
+            <div id="mainView_content">
+                <img id="imgWeather" src="Picture/clear-day.png" alt="clear day">
+                <p>Mostly cloudy throughout the day</p>
+                <h3 id="temp">22°C</h3>
+                <div id="info">
+                    <div class="contentOpten">
+                        <i class="fa fa-flag"></i>
+                        <span>5km/h</span>
+                    </div>
+                    <div class="contentOpten">
+                        <i class="fa fa-tint"></i>
+                        <span id="humidity">22%</span>
+                    </div>
+                </div>
+            </div>
+            <footer id="mainView_footer">
+                <button type="button" onclick="startDetailView()" id="buttonDetail">DETAILS</button>
+            </footer>
+        </section>
+
+        <section id="detailView">
+            <header id="detailView_header">
+                <button type="button" onclick="startMainView()" class="button buttonX"><i class="fa fa-times"></i></button>
+                <h1 class="City">Berlin</h1>
+            </header>
+
+            <div id="detailView_content">
+                <div class="container-fluet">
+                    <div class="row">
+                        <div class="col-md-2">12:00</div>
+                        <div class="col-md-4"><img src="Picture/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-md-2">17°C</div>
+                        <div class="col-md-2">6km/h</div>
+                        <div class="col-md-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img src="Picture/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img src="Picture/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img src="Picture/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img src="Picture/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img src="Picture/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img src="Picture/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">12:00</div>
+                        <div class="col-sm-4"><img src="Picture/clear-day.png" alt="clear day" class="imgDetailWeather"></div>
+                        <div class="col-sm-2">17°C</div>
+                        <div class="col-sm-2">6km/h</div>
+                        <div class="col-sm-2">63%</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <nav id="sidebar">
+        <div id="nav">
+            <button type="button" onclick="startMainView()" class="button buttonX"><i class="fa fa-times"></i></button>
+
+            <div id="navCity">
+                <i class="fa fa-globe"></i>
+                <h1>Cities</h1>
+            </div>
+
+            <div>
+                <fieldset>
+                    <label for="addCity"></label>
+                    <input type="text" id="addCity" placeholder="New City">
+                    <button type="submit" id="button_addCity"> ... </button>
+                </fieldset>
+
+            </div>
+            <ol>
+                <li>Berlin</li>
+                <li>Paris</li>
+            </ol>
+            <button type="button" id="minus">+</button>
+            <i class="fa fa-cog"></i>
+            <h1>Settings</h1>
+            <ol>
+                <li>Temp
+                    <button type="button" id="buttonC">C</button>
+                    <button type="button" id="buttonF">F</button>
+                </li>
+                <li>Wind
+                    <button type="button" id="buttonKmH">km/h</button>
+                    <button type="button" id="buttonMH">m/h</button>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>
